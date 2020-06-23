@@ -38,7 +38,8 @@ module.exports = {
   },
   plugins: [
     new webpack.NoEmitOnErrorsPlugin(),
-    new CopyWebpackPlugin([{
+    new CopyWebpackPlugin({
+      patterns: [{
         from: "./node_modules/react/umd/react.production.min.js",
         to: "libs"
       },
@@ -57,13 +58,8 @@ module.exports = {
       {
         from: "./node_modules/office-ui-fabric-react/dist/office-ui-fabric-react.min.js",
         to: "libs"
-      },
-      {
-        from: "./src/img/**/*.png",
-        to: "img",
-        flatten: true
-      }
-    ])
+      }]
+    })
   ],
   devServer: {
     host: 'localhost',
