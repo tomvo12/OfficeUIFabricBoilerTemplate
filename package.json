@@ -15,8 +15,6 @@
     "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "5.2.1",
     "copy-webpack-plugin": "^6.0.2",
-    "mocha": "^8.0.1",
-    "mocha-webpack": "^1.1.0",
     "source-map-loader": "^1.0.0",
     "typescript": "3.9.5",
     "webpack": "4.43.0",
@@ -24,7 +22,7 @@
   },
   "dependencies": {
     "es6-promise": "^4.2.8",
-    "office-ui-fabric-react": "^7.121.2",
+    "office-ui-fabric-react": "^7.121.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack-cli": "^3.3.12"
